@@ -3,7 +3,8 @@ MAINTAINER Computo team <computo@sfds.asso.fr>
 
 RUN \
     apt-get update && \
-    apt-get install -y --no-install-recommends curl bzip2 unzip texlive-latex-recommended texlive-xetex texlive-fonts-recommended cm-super-minimal texlive-fonts-extra dvipng pandoc wget && \
+    apt-get install curl bzip2 unzip && \
+    apt-get install -y --no-install-recommends texlive-latex-recommended texlive-xetex texlive-fonts-recommended cm-super-minimal texlive-fonts-extra dvipng pandoc wget && \
     apt-get --purge -y remove texlive.\*-doc$ && \
     apt-get clean && \
     rm -rf /tmp/* /var/tmp/* && \
