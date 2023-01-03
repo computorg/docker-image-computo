@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu-latest
 MAINTAINER Computo team <computo@sfds.asso.fr>
 
 RUN \
