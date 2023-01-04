@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     curl \
     dvipng pandoc wget dvisvgm \
-    texlive-latex-recommended texlive-xetex texlive-fonts-recommended  texlive-fonts-extra cm-super-minimal && \
+    texlive-latex-recommended texlive-xetex texlive-fonts-recommended  texlive-fonts-extra cm-super-minimal \
     && apt-get --purge -y remove texlive.\*-doc$ && apt-get clean \
     && wget --no-check-certificate https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.280/quarto-1.2.280-linux-amd64.deb \
     && dpkg -i quarto-1.2.280-linux-amd64.deb \
