@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     ca-certificates \
     curl \
-    dvipng pandoc wget && \
+    dvipng pandoc wget \
     texlive-latex-recommended texlive-xetex texlive-fonts-recommended  texlive-fonts-extra cm-super-minimal && \
     apt-get --purge -y remove texlive.\*-doc$ && \
     apt-get clean && \
