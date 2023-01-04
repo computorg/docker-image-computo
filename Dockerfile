@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get --purge -y remove texlive.\*-doc$ && \
     apt-get clean && \
     rm -rf /tmp/* /var/tmp/* && \
-    rm -rf /var/lib/apt /var/lib/dpkg /var/lib/cache /var/lib/log
+    rm -rf /var/lib/apt /var/lib/dpkg /var/lib/cache /var/lib/log &&\
     wget --no-check-certificate https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.280/quarto-1.2.280-linux-amd64.deb && \
     dpkg -i quarto-1.2.280-linux-amd64.deb && \
     rm quarto-1.2.280-linux-amd64.deb && \
